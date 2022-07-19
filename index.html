@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixer</title>
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.min.css"> -->
 </head>
 <body>
     <header>
         <div>
             <!-- Navbar -->
-            <div class="navbar">
+            <div class="navbar" id="homepage">
                 <a class="logo" href="index.html">
                     <img src="images/pixer-logo.svg" alt="site logo">
                 </a>
                 <ul class="navbar-list">
-                    <li><a href="index.html">Bosh sahifa</a></li>
-                    <li><a href="services.html">Xizmatlar</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="team.html">Jamoa</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacts.html">Kontaktlar</a></li>
+                    <li class="navbar-item"><a href="index.html">Bosh sahifa</a></li>
+                    <li class="navbar-item" >
+                        <a href="services.html">Xizmatlar</a>
+                    <ul class="dropdawn-list">
+                        <li class="dropdawn-item"><a href="">Vebsayt</a></li>
+                        <li class="dropdawn-item"><a href="">Telegram bot</a></li>
+                        <li class="dropdawn-item"><a href="">SMM</a></li>
+                        <li class="dropdawn-item"><a href="">Grafik dizayn</a></li>
+                        <li class="dropdawn-item"><a href="">CRM tizim</a></li>
+                    </ul>
+                    </li>
+                    <li class="navbar-item" ><a href="portfolio.html">Portfolio</a></li>
+                    <li class="navbar-item" ><a href="team.html">Jamoa</a></li>
+                    <li class="navbar-item" ><a href="blog.html">Blog</a></li>
+                    <li class="navbar-item" ><a href="contacts.html">Kontaktlar</a></li>
                 </ul><a class="btn-nav" href="tel:+998909213711">+998 90 921 37 11</a>
             </div>
         </div>
@@ -38,7 +47,7 @@
                     </h1>
                     <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget
                         sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
-                    <a href="#">Xizmatlar bilan tanishish
+                    <a href="#services">Xizmatlar bilan tanishish
                     </a>
                 </div>
                 <div class="main-vedio">
@@ -50,7 +59,7 @@
                 </div>
             </div>
             <!-- Services -->
-            <div class="services">
+            <div class="services" id="services">
                 <h2>Xizmatlar</h2>
                 <p class="services-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis
                     lacinia ex, eget
@@ -82,7 +91,7 @@
                         </a>
                     </li>
                 </ul>
-                <a class="services-btn" href="#">Buyurtma berish</a>
+                <a class="services-btn" href="#order">Buyurtma berish</a>
                 <a class="services-link" href="#">Xizmatlar sahifasiga o’tish</a>
             </div>
             <!-- How we work -->
@@ -124,11 +133,11 @@
                         </div>
                     </li>
                 </ol>
-                <div class="thework-btn"><a  href="#">Buyurtma berish</a></div>
+                <div class="thework-btn"><a  href="#order">Buyurtma berish</a></div>
             </div>
         </div>
         <!-- How do we work -->
-            <div class="place-an-order">
+            <div class="place-an-order" id="order">
                 <h2>Buyurtma berish</h2>
                 <div class="place-an-order-text">
                     <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget
@@ -138,7 +147,7 @@
                     <input type="text" name="your_name" aria-label="Enter your name" placeholder="Ismingiz" required>
                     <input type="tel" name="your_nunber" aria-label="Enter your number" placeholder="Telefon raqamingiz"
                         required>
-                    <select name="type_of_service">
+                    <select name="type_of_service" required>
                         <option selected hidden>Xizmat turi</option>
                         <option value="Vebsayt tuzish">Vebsayt tuzish</option>
                         <option value="Telegram bot">Telegram bot</option>
@@ -149,7 +158,6 @@
                     <button type="submit">Buyurtma berish</button>
                 </form>
             </div>
-        
     </section>
     <footer>
         <div class="container">
@@ -165,7 +173,7 @@
                 <div class="footer-center">
                     <strong>Sayt sahifalari</strong>
                     <ul>
-                        <li><a href="index.html">Bosh sahifa</a></li>
+                        <li><a href="#homepage">Bosh sahifa</a></li>
                         <li><a href="services.html">Xizmatlar</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="team.html">Jamoa</a></li>
